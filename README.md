@@ -16,28 +16,28 @@ curl -X 'GET' \
 #### Market api
 [Documentation](https://docs.unisat.io/dev/unisat-developer-service/unisat-marketplace)
 
-[Online Demo](https://demo.unisat.io/market)
+[Online Demo](https://demo-market.unisat.io)
 
 [Source of Online Demo](./brc20-market-demo)
 
 #### brc20-swap api
 [Documentation](https://docs.unisat.io/dev/unisat-developer-service/brc20-swap)
 
-[Online Demo](https://demo.unisat.io/swap)
+[Online Demo](https://demo-swap.unisat.io)
 
 [Source of Online Demo](./brc20-swap-demo)
 
 #### Inscribe api
 [Documentation](https://docs.unisat.io/dev/unisat-developer-service/unisat-inscribe)
 
-[Online Demo](https://demo.unisat.io/inscribe)
+[Online Demo](https://demo-inscribe.unisat.io)
 
 [Source of Online Demo](./unisat-inscribe-demo)
 
 #### Wallet api
 [Documentation](https://docs.unisat.io/dev/unisat-developer-service/unisat-wallet)
 
-[Online Demo](https://demo.unisat.io/wallet)
+[Online Demo](https://demo-web3.unisat.io)
 
 [Source of Online Demo](./unisat-web3-demo)
 

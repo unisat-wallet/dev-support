@@ -3,10 +3,8 @@
 UniSat Developer Service is open to community developers, allowing you to explore the world of Bitcoin and Ordinals. You can deploy your own inscribing services, build wallet applications, develop browsers, and much more using the API.
 
 - [Dev Documentation](https://docs.unisat.io/dev/unisat-developer-service): OpenAPI, Game Framework, etc...
+    - [**Getting an API Key**](https://docs.unisat.io/dev/unisat-developer-service#getting-an-api-key)
 - [Dev Support Telegram](https://t.me/+w3I7K-OLj4JmODM1)
-
-
-- [**Getting an API Key**](https://docs.unisat.io/dev/unisat-developer-service#getting-an-api-key)
 
 ### API Demo
 

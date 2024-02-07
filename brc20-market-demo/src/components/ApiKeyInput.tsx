@@ -1,17 +1,11 @@
 import {Card, Input} from "antd";
-import React, {useEffect, useState} from "react";
+import React from "react";
 import {setApiKey} from "../utils/httpUtils";
 
-export function ApiKeyInput() {
-    const [key, setKey] = useState<string>("")
-
-    useEffect(() => {
-        const temp = localStorage.getItem("apiKey") || "";
-        if (temp) {
-            setKey(temp)
-            setApiKey(temp)
-        }
-    }, []);
+export function ApiKeyInput({apiKey,setKey}:{
+    apiKey: string |undefined,
+    setKey: (apiKey: string) => void
+}) {
 
     return <Card size={'small'}>
         <div className={'flex-row-v-center gap-16 bold'}>
@@ -20,12 +14,11 @@ export function ApiKeyInput() {
                 <div className="api-key-input">
                     <Input type="text"
                            placeholder="Enter API key"
-                           value={key}
+                           value={apiKey}
                            onChange={(e) => {
                                const key = e.target.value;
                                setKey(key);
                                setApiKey(key);
-                               localStorage.setItem("apiKey", key);
                            }}
                     />
                 </div>

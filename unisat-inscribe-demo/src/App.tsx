@@ -6,7 +6,6 @@ import {useEventEmitter, useLocalStorageState} from "ahooks";
 import {Inscribe} from "./pages/Inscribe";
 import {ApiKeyInput} from "./components/ApiKeyInput";
 import {NetworkSwitch} from "./components/NetworkSwitch";
-import {api} from "./utils/api";
 import {OrderList} from "./pages/OrderList";
 
 function App() {

@@ -6,19 +6,13 @@ UniSat Developer Service is open to community developers, allowing you to explor
     - [**Getting an API Key**](https://docs.unisat.io/dev/unisat-developer-service#getting-an-api-key)
 - [Dev Support Telegram](https://t.me/+w3I7K-OLj4JmODM1)
 
-### API Demo
+### Interactive Examples for UniSat APIs
 
 #### UniSat Marketplace API Demo
 
 - [Documentation](https://docs.unisat.io/dev/unisat-developer-service/unisat-marketplace)
 - [Demo](https://demo-market.unisat.io)
     - [Source](./brc20-market-demo)
-
-#### brc20-swap API Demo
-
-- [Documentation](https://docs.unisat.io/dev/unisat-developer-service/brc20-swap)
-- [Demo](https://demo-swap.unisat.io)
-    + [Source](./brc20-swap-demo)
 
 #### UniSat Inscribe API Demo
 
@@ -32,4 +26,9 @@ UniSat Developer Service is open to community developers, allowing you to explor
 - [Demo](https://demo.unisat.io)
     + [Source](./unisat-web3-demo)
 
+#### brc20-swap API Demo
+
+- [Documentation](https://docs.unisat.io/dev/unisat-developer-service/brc20-swap)
+- [Demo](https://demo-swap.unisat.io)
+    + [Source](./brc20-swap-demo)
 

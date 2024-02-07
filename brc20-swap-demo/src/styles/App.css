@@ -1,0 +1,96 @@
+.app {
+    padding: 16px;
+}
+
+.main-container {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.p-8 {
+    padding: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.ml-8 {
+    margin-left: 8px;
+}
+
+.flex-row-v-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.nft-item {
+    min-width: 88px;
+    padding: 8px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #fff;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    transition: all .2s ease-in-out;
+}
+
+.nft-item:hover {
+    border: 1px solid var(--main-color);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.nft-item.selected {
+    border: 1px solid var(--main-color);
+}
+
+.nft-item.inscribe-transfer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inscribe-transfer .plus-icon {
+    font-size: 32px;
+    color: var(--main-color);
+
+}
+
+.nft-item.selected .inscription-num {
+    background: var(--main-color);
+    color: white;
+}
+
+.nft-item .tick {
+    font-size: 12px;
+    color: #8a8a8a;
+}
+
+.nft-item .inscription-num {
+    background: #ddd;
+    padding: 4px;
+    margin: 8px -8px -8px;
+}

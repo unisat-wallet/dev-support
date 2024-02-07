@@ -34,10 +34,10 @@ curl -X 'GET' \
 
 [Source of Online Demo](./unisat-inscribe-demo)
 
-#### Wallet api
+#### UniSat Wallet api
 [Documentation](https://docs.unisat.io/dev/unisat-developer-service/unisat-wallet)
 
-[Online Demo](https://demo-web3.unisat.io)
+[Online Demo](https://demo.unisat.io)
 
 [Source of Online Demo](./unisat-web3-demo)
 

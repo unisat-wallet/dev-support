@@ -1276,10 +1276,10 @@
   resolved "https://registry.yarnpkg.com/@ungap/promise-all-settled/-/promise-all-settled-1.1.2.tgz#aa58042711d6e3275dd37dc597e5d31e8c290a44"
   integrity sha512-sL/cEvJWAnClXw0wHk85/2L0G6Sj8UB0Ctc1TEMbKSsmpRosqhwj9gWgFRZSrBr2f9tiXISwNhCPmlfqUqyb9Q==
 
-"@unisat/wallet-sdk@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@unisat/wallet-sdk/-/wallet-sdk-1.2.1.tgz#aa29f90e6794574ef110cd0b00b5223c0f82adc3"
-  integrity sha512-PsDaU/mehgpEWrnhcSTywTStcbc3E4WWx4kv3L5sUHdiAAajaIAR2kWHaZmqhNH9LL/zsAi2Riiytbbra9YHrg==
+"@unisat/wallet-sdk@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@unisat/wallet-sdk/-/wallet-sdk-1.4.0.tgz#7fd229c07f7957a291de6b8f202df0b7122c9351"
+  integrity sha512-tsITbBbhMRF/AskMGTo+CIfbMMT/pnyMOwBNbl5Esarpz9bMu7cMWSv8kdcL7fASzUj0LpV4C4DK2SC7xn3HGw==
   dependencies:
     "@bitcoinerlab/secp256k1" "^1.0.5"
     bignumber.js "^9.1.2"

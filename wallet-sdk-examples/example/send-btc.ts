@@ -1,53 +1,35 @@
 import { AddressType } from "@unisat/wallet-sdk";
 import { NetworkType } from "@unisat/wallet-sdk/lib/network";
-import { getAddressUtxoDust } from "@unisat/wallet-sdk/lib/transaction";
-import { sendInscription } from "@unisat/wallet-sdk/lib/tx-helpers";
+import { sendBTC } from "@unisat/wallet-sdk/lib/tx-helpers";
 import { LocalWallet } from "@unisat/wallet-sdk/lib/wallet";
 import { MempoolApi } from "./mempool-api";
 import { OpenApi } from "./open-api";
 
-const runSendInscription = async () => {
+const runSendBitcoin = async () => {
+  const mempoolApi = new MempoolApi({
+    baseUrl: "https://mempool.space/testnet/api",
+  });
+
   const openapi = new OpenApi({
     baseUrl: "https://open-api-testnet.unisat.io",
-    apiKey: "xxxx",
+    apiKey: "",
   });
 
   const wallet = new LocalWallet(
-    "xxxxx",
-    AddressType.P2WPKH,
+    "xxxxxxx",
+    AddressType.P2PKH,
     NetworkType.TESTNET
   );
 
-  const inscriptionId = "xxxx";
-  const toAddress = "xxxxx";
-  const inscriptionInfo = await openapi.getInscriptionInfo(inscriptionId);
+  const toAddress = "xxxxxx";
   const btcUtxos = await openapi.getAddressUtxoData(wallet.address);
-
   if (wallet.addressType === AddressType.P2PKH) {
-    const mempoolApi = new MempoolApi({
-      baseUrl: "https://mempool.space/testnet/api",
-    });
     for (let i = 0; i < btcUtxos.utxo.length; i++) {
       btcUtxos.utxo[i].rawtx = await mempoolApi.getRawTx(btcUtxos.utxo[i].txid);
     }
-
-    inscriptionInfo.utxo.rawtx = await mempoolApi.getRawTx(
-      inscriptionInfo.utxo.txid
-    );
   }
 
-  const { psbt, toSignInputs } = await sendInscription({
-    assetUtxo: {
-      txid: inscriptionInfo.utxo.txid,
-      vout: inscriptionInfo.utxo.vout,
-      satoshis: inscriptionInfo.utxo.satoshi,
-      scriptPk: inscriptionInfo.utxo.scriptPk,
-      pubkey: wallet.pubkey,
-      addressType: wallet.addressType,
-      inscriptions: inscriptionInfo.utxo.inscriptions,
-      atomicals: [],
-      rawtx: inscriptionInfo.utxo.rawtx, // only for p2pkh
-    },
+  const { psbt, toSignInputs } = await sendBTC({
     btcUtxos: btcUtxos.utxo.map((v) => ({
       txid: v.txid,
       vout: v.vout,
@@ -59,11 +41,15 @@ const runSendInscription = async () => {
       atomicals: [],
       rawtx: v.rawtx, // only for p2pkh
     })),
-    toAddress,
+    tos: [
+      {
+        address: toAddress,
+        satoshis: 1000,
+      },
+    ],
     networkType: wallet.networkType,
     changeAddress: wallet.address,
     feeRate: 1,
-    outputValue: getAddressUtxoDust(toAddress),
   });
 
   let signWithLocalWallet = true;
@@ -86,4 +72,4 @@ const runSendInscription = async () => {
     //});
   }
 };
-runSendInscription();
+runSendBitcoin();

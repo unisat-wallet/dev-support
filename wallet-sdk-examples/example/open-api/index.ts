@@ -37,6 +37,7 @@ export interface UTXO {
   scriptType: string;
   txid: string;
   vout: number;
+  rawtx?: string;
 }
 
 interface InscriptionInfo {

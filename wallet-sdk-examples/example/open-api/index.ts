@@ -276,4 +276,102 @@ export class OpenApi {
     );
     return response;
   }
+
+  async createBrc205ByteMint({
+    deployerAddress,
+    deployerPubkey,
+    receiveAddress,
+    feeRate,
+    outputValue,
+    brc20Ticker,
+    brc20Amount,
+    devAddress,
+    devFee,
+  }: {
+    deployerAddress: string;
+    deployerPubkey: string;
+    receiveAddress: string;
+    feeRate: number;
+    outputValue: number;
+    brc20Ticker: string;
+    brc20Amount: string;
+    devAddress: string;
+    devFee: number;
+  }) {
+    const response = await this.axios.post<
+      null,
+      {
+        orderId: string;
+      }
+    >(`/v2/inscribe/order/create/brc20-5byte-mint`, {
+      deployerAddress,
+      deployerPubkey,
+      receiveAddress,
+      feeRate,
+      outputValue,
+      brc20Ticker,
+      brc20Amount,
+      devAddress,
+      devFee,
+    });
+    return response;
+  }
+
+  async requestCommitBrc205ByteMint({ orderId }: { orderId: string }) {
+    const response = await this.axios.post<
+      null,
+      {
+        psbtHex: string;
+        inputsToSign: {
+          address: string;
+          signingIndexes: number[];
+        }[];
+      }
+    >(`/v2/inscribe/order/request-commit/brc20-5byte-mint`, {
+      orderId,
+    });
+    return response;
+  }
+
+  async signCommitBrc205ByteMint({
+    orderId,
+    psbt,
+  }: {
+    orderId: string;
+    psbt: string;
+  }) {
+    const response = await this.axios.post<
+      null,
+      {
+        psbtHex: string;
+        inputsToSign: {
+          address: string;
+          signingIndexes: number[];
+        }[];
+      }
+    >(`/v2/inscribe/order/sign-commit/brc20-5byte-mint`, {
+      orderId,
+      psbt,
+    });
+    return response;
+  }
+
+  async signRevealBrc205ByteMint({
+    orderId,
+    psbt,
+  }: {
+    orderId: string;
+    psbt: string;
+  }) {
+    const response = await this.axios.post<
+      null,
+      {
+        inscriptionId: string;
+      }
+    >(`/v2/inscribe/order/sign-reveal/brc20-5byte-mint`, {
+      orderId,
+      psbt,
+    });
+    return response;
+  }
 }

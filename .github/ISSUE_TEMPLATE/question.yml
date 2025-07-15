@@ -1,0 +1,14 @@
+name: Question
+description: Ask a question about this project.
+title: "[Question]: "
+labels: [question]
+assignees: []
+body:
+  - type: input
+    id: your-question
+    attributes:
+      label: Your question
+      description: Please describe your question clearly.
+      placeholder: Type your question here.
+    validations:
+      required: true 

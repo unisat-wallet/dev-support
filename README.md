@@ -9,13 +9,13 @@ This repository is dedicated to collecting developer feedback, feature requests,
 ## How to Use This Repository
 
 - **Report Bugs:**
-  If you encounter any issues or unexpected behavior, please open a [Bug Report](https://github.com/unisat-wallet/dev-support/issues/new?template=bug_report.md).
+  If you encounter any issues or unexpected behavior, please open a [Bug Report](https://github.com/unisat-wallet/dev-support/issues/new?template=bug_report.yml).
 
 - **Request Features:**
-  If you have ideas for new features or improvements, please open a [Feature Request](https://github.com/unisat-wallet/dev-support/issues/new?template=feature_request.md).
+  If you have ideas for new features or improvements, please open a [Feature Request](https://github.com/unisat-wallet/dev-support/issues/new?template=feature_request.yml).
 
 - **Ask Questions:**
-  For general questions, integration help, or API usage, please open a [Question](https://github.com/unisat-wallet/dev-support/issues/new?template=question.md).
+  For general questions, integration help, or API usage, please open a [Question](https://github.com/unisat-wallet/dev-support/issues/new?template=question.yml).
 
 - **Check Existing Issues:**
   Before submitting, please search [existing issues](https://github.com/unisat-wallet/dev-support/issues) to avoid duplicates.

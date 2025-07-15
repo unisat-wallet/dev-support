@@ -1,19 +1,19 @@
 ---
 name: "Question / Support"
 description: "Ask a question or request integration help."
-title: "[Question] "
+title: "[Question] <short description>"
 labels: [question]
 assignees: []
 ---
 
 **Your question**
-Please describe your question or what you need help with.
+_What do you need help with? Please describe your question as clearly as possible._
 
 **Relevant context**
-If applicable, provide code snippets, API endpoints, or other context to help us understand your question.
+_If applicable, provide code snippets, API endpoints, error messages, or other context to help us understand your question._
 
 **What have you tried?**
-Let us know what you have already tried or checked.
+_Let us know what you have already tried or checked. This helps us avoid suggesting things you've already done._
 
 **Additional information**
-Add any other information that may help us assist you. 
+_Any other information that may help us assist you._ 

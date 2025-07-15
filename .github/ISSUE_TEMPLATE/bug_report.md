@@ -1,32 +1,29 @@
 ---
 name: "Bug Report"
 description: "Report a reproducible bug or unexpected behavior."
-title: "[Bug] "
+title: "[Bug] <short description>"
 labels: [bug]
 assignees: []
 ---
 
 **Describe the bug**
-A clear and concise description of what the bug is.
+_A clear and concise description of what the bug is. What did you expect to happen?_
 
-**To Reproduce**
-Steps to reproduce the behavior:
+**Steps to Reproduce**
+_Provide a step-by-step guide to reproduce the issue. For example:_
 1. Go to '...'
 2. Click on '...'
-3. Scroll down to '...'
-4. See error
+3. See error '...'
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**Actual Behavior**
+_What actually happened? Include error messages, screenshots, or logs if possible._
 
-**Screenshots or Logs**
-If applicable, add screenshots or log output to help explain your problem.
-
-**Environment (please complete the following information):**
-- OS: [e.g. Windows, Mac, Linux]
-- Browser [e.g. Chrome, Safari]
-- API/SDK version [e.g. v1.2.3]
-- Other relevant context
+**Environment**
+- OS: (e.g. Windows, Mac, Linux)
+- Browser: (e.g. Chrome, Safari, Firefox)
+- API/SDK version: (e.g. v1.2.3)
+- UniSat Wallet version: (if relevant)
+- Other relevant context:
 
 **Additional context**
-Add any other context about the problem here. 
+_Any other information that may help us diagnose the problem._ 
